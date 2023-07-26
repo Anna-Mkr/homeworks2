@@ -1,0 +1,92 @@
+/* Ваши стили для friendMessage */
+.friendMessageContainer {
+    display: flex;
+    flex-direction: row; /* Располагаем элементы в строку */
+    align-items: flex-end; /* Выравниваем элементы по нижнему краю */
+    justify-content: flex-start; /* Выравниваем элементы по левому краю */
+    padding-left: 3em;
+}
+
+.friendMessage {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    align-items: flex-start; /* Выравниваем элементы по левому краю */
+    justify-content: flex-end; /* Выравнивание компонента к левому краю */
+}
+
+/* Ваши стили для friendImageAndText */
+.friendImageAndText {
+    display: flex;
+    align-items: flex-end; /* Выравнивание img по нижнему краю блока */
+
+}
+
+/* Ваши стили для img */
+.friendImageAndText img {
+    width: 48px; /* Ширина изображения */
+    height: 48px; /* Высота изображения */
+    /* Дополнительные стили */
+
+}
+
+/* Ваши стили для friendTextContainer */
+.friendTextContainer {
+    position: relative;
+    /*flex: 1; !* Занимает доступное пространство блока *!*/
+    /* Дополнительные стили */
+
+
+}
+
+/* Ваши стили для friendText */
+.friendText {
+    --r: 25px; /* the radius */
+    --t: 30px; /* the size of the tail */
+    min-width: 300px;
+    padding: calc(2 * var(--r) / 3);
+    -webkit-mask: radial-gradient(var(--t) at var(--_d) 0, #0000 98%, #000 102%) var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+    conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r) / -2) calc(var(--r) / -2) padding-box,
+    radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0/var(--r) var(--r) space padding-box;
+    background: #F5F7FB border-box;
+    color: #000;
+    --_d: 0%;
+    border-left: var(--t) solid #0000;
+    margin-right: var(--t);
+    place-self: start;
+}
+
+/* Ваши стили для friendName */
+.friendName {
+    display: flex;
+    justify-content: flex-start;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Ваши стили для friendMessageText */
+.friendMessageText {
+    text-align: center; /* Выравнивание текста по центру */
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.friendTime {
+    margin-right: auto;
+    order: 5;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 12px;
+    padding-top: 5px;
+}

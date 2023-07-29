@@ -1,11 +1,16 @@
 .App {
     --header_height: 60px;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .hw {
-
+margin-bottom: 5em;
 }
 
 .hwTitle {
-
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font: 22px "Monsterrat", sans-serif;
+    font-weight: bold;
 }

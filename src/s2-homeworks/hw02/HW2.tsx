@@ -55,7 +55,6 @@ function HW2() {
     const deleteAffairCallback = (_id: number) => { // need to fix any
        setAffairs(deleteAffair(affairs,_id))
     }
-console.log(filteredAffairs)
     return (
         <div id={'hw2'}>
             <div className={s2.hwTitle}>Homework #2</div>

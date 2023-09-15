@@ -1,16 +1,21 @@
 .App {
     --header_height: 60px;
-    margin-left: 3em;
-    margin-right: 3em;
+}
+::-webkit-scrollbar {
+    width: 0;
 }
 
+
 .hw {
-margin-bottom: 5em;
+    /*margin-bottom: 3em;*/
+    padding: 25px 70px 15px 70px;
+    border-top: solid 1px #D9D9D9;
+    border-bottom: solid 1px #D9D9D9;
 }
 
 .hwTitle {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 50px 0px 15px 70px;
     font: 22px "Monsterrat", sans-serif;
     font-weight: bold;
+
 }

@@ -1,11 +1,29 @@
-.spanBlock {
+.input {
+    display: flex;
+    width: 276px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
 }
+img {
+    height: 24px;
+}
+
+.spanBlock {
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    color: #0080FF;
+}
+
+
 
 .span {
 }
 
-.input {
-}
+
 
 .pen {
+    /*width: 24px;*/
+    /*height: 24px;*/
 }

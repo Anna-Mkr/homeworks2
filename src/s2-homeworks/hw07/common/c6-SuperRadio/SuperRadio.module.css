@@ -1,6 +1,24 @@
 .radio {
-}
+    margin-left: 150px;
+    width: 100px;
 
+}
+.finalRadioClassName {
+    margin-top: 20px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.spanClassName {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
 .radio::before {
 }
 
@@ -9,7 +27,10 @@
 }
 
 .label {
+
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
 }

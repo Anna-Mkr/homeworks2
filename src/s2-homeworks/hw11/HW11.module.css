@@ -2,7 +2,15 @@
 }
 
 .wrapper {
+    display: grid;
+    grid-template-columns: 30px 150px 30px;
+    justify-content: start;
+    align-items: center;
+
 }
 
 .number {
 }
+
+
+

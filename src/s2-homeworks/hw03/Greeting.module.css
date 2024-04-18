@@ -6,15 +6,16 @@
 .inputAndButtonContainer {
     display: flex;
     Justify-content: flex-start;
+    margin-top: 10px;
 }
 
 .error {
     color: #CC0000;
 }
 
-input {
+.inputAndButtonContainer input {
     height: 36px;
-    width: 30em;
+    width: 372px;
     left: 70px;
     margin-right: 1em;
 }

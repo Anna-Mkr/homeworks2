@@ -19,5 +19,13 @@ html {
 }
 
 .select {
+    width: 171px;
+    height: 36px;
+    top: 1019px;
+    left: 70px;
+    gap: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left
 
 }

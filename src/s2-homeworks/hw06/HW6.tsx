@@ -26,7 +26,7 @@ const HW6 = () => {
     }
 
     return (
-        <div id={'hw6'} >
+        <div id={'hw6'} style={{background: "green"}} >
             <div className={s2.hwTitle}>Homework #6</div>
 
             {/*демонстрация возможностей компоненты:*/}
@@ -37,7 +37,8 @@ const HW6 = () => {
                         value={value}
                         onChangeText={setValue}
                         spanProps={{
-                            id: 'hw6-editable-span-value',
+                            //id: 'hw6-editable-span-value',
+                            id: 'hw6-editable-span',
                             defaultText: 'enter text...',
                         }}
                     />

@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import s2 from '../../s1-main/App.module.css'
 import s from './HW14.module.css'
 import axios from 'axios'
 import SuperDebouncedInput from './common/c8-SuperDebouncedInput/SuperDebouncedInput'
-import {useSearchParams} from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 
 /*
 * 1 - дописать функцию onChangeTextCallback в SuperDebouncedInput
@@ -17,7 +17,7 @@ const getTechs = (find: string) => {
     return axios
         .get<{ techs: string[] }>(
             'https://samurai.it-incubator.io/api/3.0/homework/test2',
-            {params: {find}}
+            { params: { find } }
         )
         .catch((e) => {
             alert(e.response?.data?.errorText || e.message)
@@ -35,20 +35,30 @@ const HW14 = () => {
         getTechs(value)
             .then((res) => {
                 // делает студент
-
+                let techs: string[] = []
+                let result = []
+                if (res) {
+                    techs = res.data.techs
+                }
+                for (let i = 0; i < techs.length; i++) {
+                    if (techs[i] === value) {
+                        result.push(techs[i])
+                    }
+                }
                 // сохранить пришедшие данные
-
+setTechs(result)
+setLoading(false)
                 //
             })
     }
 
     const onChangeText = (value: string) => {
+        console.log(value +'is value')
         setFind(value)
         // делает студент
-
+        setSearchParams(value)
         // добавить/заменить значение в квери урла
         // setSearchParams(
-
         //
     }
 
@@ -77,7 +87,7 @@ const HW14 = () => {
                 />
 
                 <div id={'hw14-loading'} className={s.loading}>
-                    {isLoading ? '...ищем' : <br/>}
+                    {isLoading ? '...ищем' : <br />}
                 </div>
 
                 {mappedTechs}

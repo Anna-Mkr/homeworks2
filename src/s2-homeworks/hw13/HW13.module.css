@@ -1,4 +1,4 @@
-.buttonsContainer {
+/* .buttonsContainer {
     display: flex;
 }
 
@@ -27,4 +27,92 @@
 .text {
 }
 .info {
+} */
+
+/* Контейнер для кнопок */
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Стили для кнопок */
+.buttonsContainer button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-color: #0066CC;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #0066CC;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    /* Добавляем flex для выравнивания текста */
+    justify-content: center;
+    /* Выравниваем текст по центру */
+    align-items: center;
+    /* Выравниваем текст по центру */
+    white-space: nowrap;
+    /* Запрещаем перенос текста */
+    overflow: hidden;
+    /* Скрываем текст, который не помещается */
+    text-overflow: ellipsis;
+    /* Добавляем многоточие, если текст не помещается */
+}
+
+/* .buttonsContainer button:hover {
+    background-color: #0056b3;
+} */
+
+.buttonsContainer button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Контейнер для ответа */
+.responseContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Контейнер для изображения */
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Изображение */
+.image {
+    width: 300px;
+    height: auto;
+}
+
+/* Контейнер для текста */
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Код */
+.code {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Текст */
+.text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Информация */
+.info {
+    font-size: 14px;
+    color: #666;
 }

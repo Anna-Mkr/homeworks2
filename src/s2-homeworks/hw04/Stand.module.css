@@ -1,7 +1,7 @@
 .stand {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+  
 }
 
 .inputs {
@@ -12,6 +12,7 @@
 
 .buttons {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     gap: 24px;
 }
@@ -20,4 +21,14 @@
     display: flex;
     flex-direction: column;
     gap: 36px;
+}
+
+.inputs>div {
+    margin-bottom: 24px;
+    /* Отступ снизу для input */
+}
+
+.buttons>div {
+    margin-top: 24px;
+    /* Отступ сверху для button */
 }

@@ -5,6 +5,7 @@ import axios from 'axios'
 import SuperDebouncedInput from './common/c8-SuperDebouncedInput/SuperDebouncedInput'
 import { useSearchParams } from 'react-router-dom'
 
+
 /*
 * 1 - дописать функцию onChangeTextCallback в SuperDebouncedInput
 * 2 - дописать функцию sendQuery в HW14
@@ -34,29 +35,17 @@ const HW14 = () => {
         setLoading(true)
         getTechs(value)
             .then((res) => {
-                // делает студент
-                let techs: string[] = []
-                let result = []
                 if (res) {
-                    techs = res.data.techs
+                    setTechs(res.data.techs)
                 }
-                for (let i = 0; i < techs.length; i++) {
-                    if (techs[i] === value) {
-                        result.push(techs[i])
-                    }
-                }
-                // сохранить пришедшие данные
-setTechs(result)
-setLoading(false)
-                //
+                setLoading(false)
             })
     }
 
     const onChangeText = (value: string) => {
-        console.log(value +'is value')
         setFind(value)
         // делает студент
-        setSearchParams(value)
+        setSearchParams({find: value})
         // добавить/заменить значение в квери урла
         // setSearchParams(
         //
